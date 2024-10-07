@@ -1,0 +1,103 @@
+/* style="background: linear-gradient(to right, rgb(33, 13, 22) 16%, rgb(184, 40, 105), rgb(229, 9, 20), rgb(184, 40, 105), rgb(33, 13, 22) 84%);" */
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+
+/* icons */
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24;
+  color: white;
+}
+
+.more-reasons-container{
+    /* border: 2px solid blue; */
+    margin-top:6vh ;
+}
+.more-reason-text{
+    margin-top: 10px;
+    color: white;
+}
+.reasoncards-container{
+    display: flex;
+    gap: 10px;
+    margin-top: 1rem;
+    justify-content: center;
+    /* border: 2px solid red; */
+    /* flex-wrap: wrap; */
+    color: white;
+}
+
+.reasoncards{
+    width: 250px;
+    height: 320px;
+    /* border: 2px solid green; */
+    border-radius: 20px;
+    background: linear-gradient(45deg,rgba(27, 10, 49, 0.233),rgba(118, 68, 255, 0.274),rgba(111, 16, 219, 0.281),rgba(62, 1, 87, 0.164),rgba(255, 0, 0, 0.137));
+    color: white;
+    padding: 20px 15px;
+    flex-grow: auto;
+}
+
+.reasoncards>p{
+    margin-top: 10px;
+    color: gray;
+    font-weight: 600;
+}
+
+.faq{
+    margin-top: 6vh;
+    /* border: 2px solid red; */
+}
+.faq-text{
+    /* margin: 10px; */
+    margin-bottom: 20px;
+    color: white;
+}
+
+.questions{
+    /* border: 1px solid blue; */
+    margin: 10px auto;
+    margin-left: 10px;
+    background-color: #2d2d2d;
+    padding: 20px;
+    display: flex;
+    color: white;
+    cursor: pointer;
+    font-family: "Lato",sans-serif;
+    font-weight: 700;
+    font-size: clamp(1rem,1vw,1.2rem);
+    justify-content: space-between;
+}
+.questions>button{
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+}
+.questions:hover{
+    background-color: #3d3d3d;
+}
+@media (min-width: 960px) and (max-width: 1280px) {
+    .reasoncards{
+        
+        width: 45%;
+        height:200px;
+        padding: 25px 20px;
+        gap: auto;
+    }
+    .reasoncards-container{
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (max-width:959px){
+    .reasoncards{
+        width: 100%;
+        height: 185px;
+    }
+    .reasoncards-container{
+        flex-wrap: wrap;
+    }
+}
