@@ -35,10 +35,12 @@
     height: 320px;
     /* border: 2px solid green; */
     border-radius: 20px;
-    background: linear-gradient(45deg,rgba(27, 10, 49, 0.233),rgba(118, 68, 255, 0.274),rgba(111, 16, 219, 0.281),rgba(62, 1, 87, 0.164),rgba(255, 0, 0, 0.137));
+    background: linear-gradient(149deg, #192247 0%, #210e17 96.86%);
     color: white;
     padding: 20px 15px;
     flex-grow: auto;
+    display: flex;
+    flex-direction: column;
 }
 
 .reasoncards>p{
@@ -46,6 +48,24 @@
     color: gray;
     font-weight: 600;
 }
+
+.card-svg>img{
+    width: 60px;
+    mix-blend-mode: lighten;
+}
+
+.card-svg{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    flex-grow: 1;
+   /* border: 2px solid red; */
+}
+
+/* .tv{
+    top: 100px;
+    left: 150px;
+} */
 
 .faq{
     margin-top: 6vh;
