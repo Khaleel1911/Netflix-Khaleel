@@ -43,6 +43,7 @@ header{
 .header-main{
     width: 100vw;
     min-height: 100%;
+    overflow: hidden;
     background:  linear-gradient(180deg,rgba(0, 0, 0, 0.945),rgba(0, 0, 0, 0.623)
     ,rgba(0, 0, 0, 0.767),rgba(0, 0, 0, 0.726),rgba(0, 0, 0, 0.822)
     );
@@ -211,8 +212,28 @@ select > option{
     background-color: #c40b14;
 }
 
-
+.wave {
+    /* background-color: rgb(10, 188, 247); */
+    height: 16vh;
+    /* margin-top: 40vh; */
+    border-top: 3px solid transparent;
+    border-bottom: none;
+    outline: none;
+    background: radial-gradient(ellipse at top,#0d132e,#0d132e,black,black,black) padding-box,
+    linear-gradient(250deg,#aa2561,#e20b1a,#a2245d);
+    border-top-right-radius: 100%;
+    border-top-left-radius: 100%;
+    width: 100%;
+    transform: scale(1.15);
+    /* margin-top: auto; */
+    
+    /* border: 2px solid red; */
+    
+}
 @media screen and (max-width:600px){
+    .header-main{
+        overflow: hidden;
+    }
     .credentials{
         width: 80vw;
         display: flex;
@@ -251,7 +272,23 @@ select > option{
         align-items: center;
         text-align: center;
     }
-    
+    .wave {
+       
+        height: 40px;
+        /* margin-top: 40vh; */
+        border-top: 3px solid transparent;
+        background: radial-gradient(ellipse at top,#0d132e,#0d132e,black,black,black) padding-box,
+        linear-gradient(250deg,#aa2561,#e20b1a,#a2245d);
+        border-top-right-radius: 100%;
+        border-top-left-radius: 100%;
+        width: 100%;
+        transform: scale(1.25);
+        
+        /* margin-top: auto; */
+        
+        /* border: 2px solid red; */
+        
+    }
 
 }
 
@@ -263,5 +300,22 @@ select > option{
     .credentials>button{
         width: 50%;
         height: 60px;
+    }
+    .wave {
+       
+        height: 5vh;
+        /* margin-top: 40vh; */
+        border-top: 3px solid transparent;
+        background: radial-gradient(ellipse at top,#0d132e,#0d132e,black,black,black) padding-box,
+        linear-gradient(250deg,#aa2561,#e20b1a,#a2245d);
+        border-top-right-radius: 100%;
+        border-top-left-radius: 100%;
+        width: 100%;
+        transform: scale(1.25);
+        
+        /* margin-top: auto; */
+        
+        /* border: 2px solid red; */
+        
     }
 }
