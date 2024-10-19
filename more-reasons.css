@@ -87,8 +87,8 @@
     color: white;
     cursor: pointer;
     font-family: "Lato",sans-serif;
-    font-weight: 700;
-    font-size: clamp(1rem,1vw,1.2rem);
+    font-weight: 500;
+    font-size: clamp(1rem,1.5vw,1.2rem);
     justify-content: space-between;
 }
 .questions>button{
@@ -98,6 +98,26 @@
 }
 .questions:hover{
     background-color: #3d3d3d;
+}
+
+
+.answers{
+    margin-top: 2px;
+    margin-left: 10px;
+    min-height: fit-content;
+    background-color: #2d2d2d;
+    padding: 20px;
+    display: flex;
+    color: white;
+    /* border: 2px solid red; */
+    cursor: pointer;
+    font-family: "Lato",sans-serif;
+    font-weight: 500;
+    font-size: clamp(1rem,1.5vw,1.2rem);
+    justify-content: space-between;
+}
+.hidden{
+    display: none;
 }
 @media (min-width: 960px) and (max-width: 1280px) {
     .reasoncards{
